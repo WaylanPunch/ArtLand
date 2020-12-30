@@ -1,34 +1,40 @@
 package com.artland.entity;
 
+/**
+ * @author WaylanPunch
+ * @email waylanpunch@gmail.com
+ * @link https://github.com/WaylanPunch
+ * @date 2017-10-31
+ */
 public class BlogTagCount {
-    private Integer tagId;
+	private Integer tagId;
 
-    private String tagName;
+	private String tagName;
 
-    private Integer tagCount;
+	private Integer tagCount;
 
 
-    public Integer getTagId() {
-        return tagId;
-    }
+	public Integer getTagId() {
+		return tagId;
+	}
 
-    public void setTagId(Integer tagId) {
-        this.tagId = tagId;
-    }
+	public void setTagId(Integer tagId) {
+		this.tagId = tagId;
+	}
 
-    public String getTagName() {
-        return tagName;
-    }
+	public String getTagName() {
+		return tagName;
+	}
 
-    public void setTagName(String tagName) {
-        this.tagName = tagName;
-    }
+	public void setTagName(String tagName) {
+		this.tagName = tagName;
+	}
 
-    public Integer getTagCount() {
-        return tagCount;
-    }
+	public Integer getTagCount() {
+		return tagCount;
+	}
 
-    public void setTagCount(Integer tagCount) {
-        this.tagCount = tagCount;
-    }
+	public void setTagCount(Integer tagCount) {
+		this.tagCount = tagCount;
+	}
 }

@@ -4,6 +4,12 @@ import com.artland.entity.BlogComment;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author WaylanPunch
+ * @email waylanpunch@gmail.com
+ * @link https://github.com/WaylanPunch
+ * @date 2017-10-31
+ */
 public interface BlogCommentMapper {
     int deleteByPrimaryKey(Long commentId);
 

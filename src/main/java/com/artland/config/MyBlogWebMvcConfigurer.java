@@ -7,20 +7,26 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * @author WaylanPunch
+ * @email waylanpunch@gmail.com
+ * @link https://github.com/WaylanPunch
+ * @date 2017-10-31
+ */
 @Configuration
 public class MyBlogWebMvcConfigurer implements WebMvcConfigurer {
 
-    @Autowired
-    private AdminLoginInterceptor adminLoginInterceptor;
+	@Autowired
+	private AdminLoginInterceptor adminLoginInterceptor;
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        // 添加一个拦截器，拦截以/admin为前缀的url路径
-        registry.addInterceptor(adminLoginInterceptor).addPathPatterns("/admin/**").excludePathPatterns("/admin/login").excludePathPatterns("/admin/dist/**").excludePathPatterns("/admin/plugins/**");
-    }
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		// 添加一个拦截器，拦截以/admin为前缀的url路径
+		registry.addInterceptor(adminLoginInterceptor).addPathPatterns("/admin/**").excludePathPatterns("/admin/login").excludePathPatterns("/admin/dist/**").excludePathPatterns("/admin/plugins/**");
+	}
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/upload/**").addResourceLocations("file:" + Constants.FILE_UPLOAD_DIC);
-    }
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/upload/**").addResourceLocations("file:" + Constants.FILE_UPLOAD_DIC);
+	}
 }

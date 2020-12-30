@@ -3,6 +3,12 @@ package com.artland.dao;
 import com.artland.entity.AdminUser;
 import org.apache.ibatis.annotations.Param;
 
+/**
+ * @author WaylanPunch
+ * @email waylanpunch@gmail.com
+ * @link https://github.com/WaylanPunch
+ * @date 2017-10-31
+ */
 public interface AdminUserMapper {
     int insert(AdminUser record);
 

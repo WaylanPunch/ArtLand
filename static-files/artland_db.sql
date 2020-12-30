@@ -53,7 +53,7 @@ CREATE TABLE `tb_admin_user` (
 
 /*Data for the table `tb_admin_user` */
 
-insert  into `tb_admin_user`(`admin_user_id`,`login_user_name`,`login_password`,`nick_name`,`locked`) values (1,'admin','e10adc3949ba59abbe56e057f20f883e','十三',0);
+insert  into `tb_admin_user`(`admin_user_id`,`login_user_name`,`login_password`,`nick_name`,`locked`) values (1,'admin','e10adc3949ba59abbe56e057f20f883e','WaylanPunch',0);
 
 /*Table structure for table `tb_blog` */
 
@@ -196,18 +196,18 @@ CREATE TABLE `tb_config` (
 
 /*Data for the table `tb_config` */
 
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerAbout','your personal blog. have fun.','2018-11-11 20:33:23','2018-11-12 11:58:06');
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerCopyRight','2019 十三','2018-11-11 20:33:31','2018-11-12 11:58:06');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerAbout','A Blog Website.','2018-11-11 20:33:23','2018-11-12 11:58:06');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerCopyRight','2017 WaylanPunch','2018-11-11 20:33:31','2018-11-12 11:58:06');
 insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerICP','浙ICP备17008806号-3','2018-11-11 20:33:27','2018-11-12 11:58:06');
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerPoweredBy','https://github.com/ZHENFENG13','2018-11-11 20:33:36','2018-11-12 11:58:06');
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerPoweredByURL','https://github.com/ZHENFENG13','2018-11-11 20:33:39','2018-11-12 11:58:06');
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('websiteDescription','personal blog是SpringBoot2+Thymeleaf+Mybatis建造的个人博客网站.SpringBoot实战博客源码.个人博客搭建','2018-11-11 20:33:04','2018-11-11 22:05:14');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerPoweredBy','https://github.com/WaylanPunch/','2018-11-11 20:33:36','2018-11-12 11:58:06');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('footerPoweredByURL','https://github.com/WaylanPunch/','2018-11-11 20:33:39','2018-11-12 11:58:06');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('websiteDescription','WAYLANPUNCH是SpringBoot2+Thymeleaf+Mybatis建造的个人博客网站.SpringBoot实战博客源码.个人博客搭建','2018-11-11 20:33:04','2018-11-11 22:05:14');
 insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('websiteIcon','/admin/dist/img/favicon.png','2018-11-11 20:33:11','2018-11-11 22:05:14');
 insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('websiteLogo','/admin/dist/img/logo2.png','2018-11-11 20:33:08','2018-11-11 22:05:14');
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('websiteName','personal blog','2018-11-11 20:33:01','2018-11-11 22:05:14');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('websiteName','WAYLANPUNCH','2018-11-11 20:33:01','2018-11-11 22:05:14');
 insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('yourAvatar','/admin/dist/img/13.png','2018-11-11 20:33:14','2019-05-07 21:56:23');
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('yourEmail','2449207463@qq.com','2018-11-11 20:33:17','2019-05-07 21:56:23');
-insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('yourName','13','2018-11-11 20:33:20','2019-05-07 21:56:23');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('yourEmail','waylanpunch@gmail.com','2018-11-11 20:33:17','2019-05-07 21:56:23');
+insert  into `tb_config`(`config_name`,`config_value`,`create_time`,`update_time`) values ('yourName','WaylanPunch','2018-11-11 20:33:20','2019-05-07 21:56:23');
 
 /*Table structure for table `tb_link` */
 
@@ -228,10 +228,10 @@ CREATE TABLE `tb_link` (
 /*Data for the table `tb_link` */
 
 insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (1,0,'tqr','rqwe','rqw',0,1,'2018-10-22 18:57:52');
-insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (2,2,'十三的GitHub','https://github.com/ZHENFENG13','十三分享代码的地方',1,0,'2018-10-22 19:41:04');
-insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (3,2,'十三的博客','http://13blog.site','个人独立博客13blog',14,0,'2018-10-22 19:53:34');
+insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (2,2,'WaylanPunch的GitHub','https://github.com/WaylanPunch/','WaylanPunch分享代码的地方',1,0,'2018-10-22 19:41:04');
+insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (3,2,'WaylanPunch的博客','http://waylanpunch.site','个人独立博客13blog',14,0,'2018-10-22 19:53:34');
 insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (4,1,'CSDN 图文课','https://gitchat.csdn.net','IT优质内容平台',6,0,'2018-10-22 19:55:55');
-insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (5,2,'十三的博客园','https://www.cnblogs.com/han-1034683568','最开始写博客的地方',17,0,'2018-10-22 19:56:14');
+insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (5,2,'WaylanPunch的博客','https://waylanpunch.github.io/','最开始写博客的地方',17,0,'2018-10-22 19:56:14');
 insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (6,1,'CSDN','https://www.csdn.net/','CSDN-专业IT技术社区官网',4,0,'2018-10-22 19:56:47');
 insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (7,0,'梁桂钊的博客','http://blog.720ui.com','后端攻城狮',1,0,'2018-10-22 20:01:38');
 insert  into `tb_link`(`link_id`,`link_type`,`link_name`,`link_url`,`link_description`,`link_rank`,`is_deleted`,`create_time`) values (8,0,'猿天地','http://cxytiandi.com','一个综合性的网站,以程序猿用户为主,提供各种开发相关的内容',12,0,'2018-10-22 20:02:41');

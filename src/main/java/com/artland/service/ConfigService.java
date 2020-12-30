@@ -2,20 +2,26 @@ package com.artland.service;
 
 import java.util.Map;
 
+/**
+ * @author WaylanPunch
+ * @email waylanpunch@gmail.com
+ * @link https://github.com/WaylanPunch
+ * @date 2017-10-31
+ */
 public interface ConfigService {
-    /**
-     * 修改配置项
-     *
-     * @param configName
-     * @param configValue
-     * @return
-     */
-    int updateConfig(String configName, String configValue);
+	/**
+	 * 修改配置项
+	 *
+	 * @param configName
+	 * @param configValue
+	 * @return
+	 */
+	int updateConfig(String configName, String configValue);
 
-    /**
-     * 获取所有的配置项
-     *
-     * @return
-     */
-    Map<String,String> getAllConfigs();
+	/**
+	 * 获取所有的配置项
+	 *
+	 * @return
+	 */
+	Map<String, String> getAllConfigs();
 }

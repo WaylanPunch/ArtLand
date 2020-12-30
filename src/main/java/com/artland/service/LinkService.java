@@ -7,29 +7,35 @@ import com.artland.util.PageResult;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author WaylanPunch
+ * @email waylanpunch@gmail.com
+ * @link https://github.com/WaylanPunch
+ * @date 2017-10-31
+ */
 public interface LinkService {
-    /**
-     * 查询友链的分页数据
-     *
-     * @param pageUtil
-     * @return
-     */
-    PageResult getBlogLinkPage(PageQueryUtil pageUtil);
+	/**
+	 * 查询友链的分页数据
+	 *
+	 * @param pageUtil
+	 * @return
+	 */
+	PageResult getBlogLinkPage(PageQueryUtil pageUtil);
 
-    int getTotalLinks();
+	int getTotalLinks();
 
-    Boolean saveLink(BlogLink link);
+	Boolean saveLink(BlogLink link);
 
-    BlogLink selectById(Integer id);
+	BlogLink selectById(Integer id);
 
-    Boolean updateLink(BlogLink tempLink);
+	Boolean updateLink(BlogLink tempLink);
 
-    Boolean deleteBatch(Integer[] ids);
+	Boolean deleteBatch(Integer[] ids);
 
-    /**
-     * 返回友链页面所需的所有数据
-     *
-     * @return
-     */
-    Map<Byte, List<BlogLink>> getLinksForLinkPage();
+	/**
+	 * 返回友链页面所需的所有数据
+	 *
+	 * @return
+	 */
+	Map<Byte, List<BlogLink>> getLinksForLinkPage();
 }

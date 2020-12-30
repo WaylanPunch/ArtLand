@@ -27,10 +27,10 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * @author 13
- * @qq交流群 796794009
- * @email 2449207463@qq.com
- * @link http://13blog.site
+ * @author WaylanPunch
+ * @email waylanpunch@gmail.com
+ * @link https://github.com/WaylanPunch
+ * @date 2017-10-31
  */
 @Controller
 @RequestMapping("/admin")
